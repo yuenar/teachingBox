@@ -1,0 +1,15 @@
+#include <iostream>
+
+/*comment*/
+
+int main(int argc, char **argv){
+	int numbers[20];
+	double average, total; //comment
+	for(int i = 0; i != 20; ++i){
+		numbers[i] = i;
+		Total += i;
+	}
+	average = total / 20;
+	std::cout << "total" << total << "\nAverage: " << average << '\n';
+	getchar();
+}

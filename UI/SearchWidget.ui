@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SearchWidget</class>
+ <widget class="QWidget" name="SearchWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>110</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>110</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout" columnstretch="0,0,0,0,0,0,0,0,0">
+     <item row="1" column="2" colspan="2">
+      <widget class="QPushButton" name="replace_">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::TabFocus</enum>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;替换匹配项&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton{
+    background-color: transparent;
+}
+QToolButton:hover{
+    background-color: rgb(86, 86, 86);
+}</string>
+       </property>
+       <property name="text">
+        <string>替换</string>
+       </property>
+       <property name="shortcut">
+        <string>Ctrl+R</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" alignment="Qt::AlignLeft">
+      <widget class="QLabel" name="find_label_">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(170, 85, 255);
+background-color: rgb(89, 89, 89);
+padding: 2px;</string>
+       </property>
+       <property name="text">
+        <string>查找</string>
+       </property>
+       <property name="buddy">
+        <cstring>find_word_</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QToolButton" name="next_">
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Ctrl+Alt+N&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:transparent;
+background-image: url(:/icon/next.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="editor.qrc">
+         <normaloff>:/icon/next.png</normaloff>:/icon/next.png</iconset>
+       </property>
+       <property name="shortcut">
+        <string>Ctrl+Shift+N</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="8" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+      <widget class="QToolButton" name="colose_buttom_">
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;关闭查找栏&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton{
+    background-color: transparent;
+}
+QToolButton:hover{
+    background-color: rgb(86, 86, 86);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="editor.qrc">
+         <normaloff>:/icon/delete_white.png</normaloff>:/icon/delete_white.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="find_word_">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>10</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(80, 80, 80);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" alignment="Qt::AlignLeft">
+      <widget class="QLabel" name="replace_label_">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(170, 85, 255);
+background-color: rgb(89, 89, 89);
+padding: 2px;</string>
+       </property>
+       <property name="text">
+        <string>替换为</string>
+       </property>
+       <property name="buddy">
+        <cstring>replace_word_</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4" alignment="Qt::AlignHCenter">
+      <widget class="QCheckBox" name="whole_word_">
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;匹配整词&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox::indicator{
+	image: url(:/icon/whole_word.png);
+}
+QCheckBox::indicator:unchecked{
+	background-color: transparent;
+}
+QCheckBox::indicator:checked{
+	border: 1px solid rgb(72, 145, 218);
+}
+QCheckBox::indicator:unchecked:hover {
+	background-color: rgb(86, 86, 86);
+}
+QCheckBox::indicator:checked:hover {
+    background-color: rgb(86, 86, 86);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QCheckBox" name="case_sensitive_">
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;区分大小写&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox::indicator {
+	image: url(:/icon/case_sensitive.png);
+}
+QCheckBox::indicator:unchecked{
+	background-color: transparent;
+}
+QCheckBox::indicator:checked{
+	border: 1px solid rgb(72, 145, 218);
+}
+QCheckBox::indicator:unchecked:hover {
+	background-color: rgb(86, 86, 86);
+}
+QCheckBox::indicator:checked:hover {
+    background-color: rgb(86, 86, 86);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QToolButton" name="pred_">
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Ctrl+Alt+P&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/icon/pred.png);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="editor.qrc">
+         <normaloff>:/icon/pred.png</normaloff>:/icon/pred.png</iconset>
+       </property>
+       <property name="shortcut">
+        <string>Ctrl+Shift+P</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="replace_word_">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(80, 80, 80);
+color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6">
+      <widget class="QCheckBox" name="reg_exp_">
+       <property name="maximumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;使用正则表达式查找&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox::indicator {
+	image: url(:/icon/reg_exp.png);
+}
+QCheckBox::indicator:unchecked{
+	background-color: transparent;
+}
+QCheckBox::indicator:checked{
+	border: 1px solid rgb(72, 145, 218);
+}
+QCheckBox::indicator:unchecked:hover {
+	background-color: rgb(86, 86, 86);
+}
+QCheckBox::indicator:checked:hover {
+    background-color: rgb(86, 86, 86);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4" colspan="3">
+      <widget class="QPushButton" name="replace_move_next_">
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;替换并移动光标到下一个匹配项&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton{
+    background-color: transparent;
+}
+QToolButton:hover{
+    background-color: rgb(86, 86, 86);
+}</string>
+       </property>
+       <property name="text">
+        <string>查找下一位置</string>
+       </property>
+       <property name="shortcut">
+        <string>Ctrl+Shift+R</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="7">
+      <widget class="QPushButton" name="replace_all_">
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;替换全部匹配项&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton{
+    background-color: transparent;
+}
+QToolButton:hover{
+    background-color: rgb(86, 86, 86);
+}</string>
+       </property>
+       <property name="text">
+        <string>替换全部</string>
+       </property>
+       <property name="shortcut">
+        <string>Ctrl+Shift+A</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="editor.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Task_List>
+    <task Id="main.rcf">
+        <statement>/*主函数*/
+start()//下发会替换这段函数文件中语句，关键是回读
+	
+	int yg=88;
+	func1();
+	
+	stop()</statement>
+    </task>
+    <task Id="start.rcf">
+        <statement>//开始函数
+begin
+	int hh=99;
+end</statement>
+    </task>
+    <task Id="stop.rcf">
+        <statement>begin
+int hh=99;
+end</statement>
+    </task>
+</Task_List>

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SysInfoBox</class>
+ <widget class="QToolBox" name="SysInfoBox">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>540</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>66</red>
+        <green>198</green>
+        <blue>97</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>213</green>
+        <blue>156</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>66</red>
+        <green>198</green>
+        <blue>97</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>213</green>
+        <blue>156</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>213</green>
+        <blue>156</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>213</green>
+        <blue>156</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="windowTitle">
+   <string>ToolBox</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::Box</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Sunken</enum>
+  </property>
+  <property name="currentIndex">
+   <number>3</number>
+  </property>
+  <widget class="QWidget" name="iofP">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>536</width>
+     <height>292</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <attribute name="label">
+    <string>     I/O信息</string>
+   </attribute>
+   <widget class="QGroupBox" name="ioGrBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>501</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="vLay">
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="cfgNeLb">
+       <property name="text">
+        <string>配置信息</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="cfgDetLb">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="staInfoLb">
+       <property name="text">
+        <string>状态信息</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="staDetLb">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="ctlP">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>536</width>
+     <height>292</height>
+    </rect>
+   </property>
+   <attribute name="label">
+    <string>    控制器状态信息</string>
+   </attribute>
+   <widget class="QGroupBox" name="statsGrBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>501</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="vLay_2">
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="conNeLb">
+       <property name="text">
+        <string>通信状态</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="conDetLb">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="ctrNeLb">
+       <property name="text">
+        <string>设备状态</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="ctrDetLb">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="tepNeLb">
+       <property name="text">
+        <string>温度状态</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="tepDetLb">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="errNeLb">
+       <property name="text">
+        <string>异常信息</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="errDetLb">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="setP">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>536</width>
+     <height>292</height>
+    </rect>
+   </property>
+   <attribute name="label">
+    <string>    控制器设置信息</string>
+   </attribute>
+   <widget class="QGroupBox" name="setGrBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>501</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>540</width>
+      <height>400</height>
+     </size>
+    </property>
+    <layout class="QVBoxLayout" name="vLay_3">
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="vrnNeLb">
+       <property name="text">
+        <string>版本</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="vrnDetLb">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="softLmtNeLb">
+       <property name="text">
+        <string>软限位</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="softLmtDetLb">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="sptCfgNeLb">
+       <property name="text">
+        <string>运动参数限制</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="sptDetLb">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="zeroNeLb">
+       <property name="text">
+        <string>零位码盘值</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="zeroDetLb">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="dhCfgNeLb">
+       <property name="text">
+        <string>DH参数</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="dhDetLb">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="subPctNeLb">
+       <property name="text">
+        <string>减速比</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="subPrecentLb">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="usrP">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>536</width>
+     <height>292</height>
+    </rect>
+   </property>
+   <attribute name="label">
+    <string>    用户信息</string>
+   </attribute>
+   <widget class="QGroupBox" name="userGrBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>491</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="vLay_4">
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="usrNeLb">
+       <property name="text">
+        <string>已登录用户</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="usrDetLb">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="siaLb">
+       <property name="text">
+        <string>关于软件</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="siaDetLb">
+       <property name="text">
+        <string>新松机器人在线主控程序V0.1</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

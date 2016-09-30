@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Task_List>
+    <Func Name="main.rcf">
+        <Statement>start()
+	
+	int yg=88;
+	func1();
+	
+	stop()</Statement>
+    </Func>
+    <Func Name="start.rcf">
+        <Statement>begin
+	int hh=99;
+end</Statement>
+    </Func>
+    <Func Name="stop.rcf">
+        <Statement>begin
+	int hh=99;
+	bool isRunning=false;
+end</Statement>
+    </Func>
+</Task_List>

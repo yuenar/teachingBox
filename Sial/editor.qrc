@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/">
+        <file>DarkTheme.qss</file>
+        <file>example_text.txt</file>
+        <file alias="assistant.png">icon/assistant.png</file>
+        <file alias="copy.png">icon/copy.png</file>
+        <file alias="cut.png">icon/cut.png</file>
+        <file alias="delete.png">icon/delete.png</file>
+        <file>icon/display.png</file>
+        <file>icon/hide.png</file>
+        <file alias="paste.png">icon/paste.png</file>
+        <file alias="read.png">icon/read.png</file>
+        <file alias="style.png">icon/style.png</file>
+        <file alias="write.png">icon/write.png</file>
+        <file>icon/next.png</file>
+        <file>icon/pred.png</file>
+        <file>icon/case_sensitive.png</file>
+        <file>icon/delete_white.png</file>
+        <file>icon/whole_word.png</file>
+        <file>icon/reg_exp.png</file>
+        <file>icon/replace.png</file>
+        <file>icon/replace_all.png</file>
+        <file>icon/replace_move.png</file>
+        <file>icon/split.png</file>
+        <file>icon/close.png</file>
+    </qresource>
+</RCC>

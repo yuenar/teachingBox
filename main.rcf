@@ -1,0 +1,5 @@
+start()
+	
+	int yg=88;
+	func1();
+	stop()
